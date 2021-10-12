@@ -2,36 +2,21 @@
 
 ## O que fazer? 
 
-- Definir cores a serem utilizadas. [ ]
-- Baixar as imagens para iniciar o projeto [ ]
-- Definir estrutura [ ]
-- Pegar a localização do estabelecimento [ ]
+- Alterar a cor do SVG para Branco [ ]
+- Colocar os links nas imagens das redes sociais [ ]
+- Alterar as Imagens do Menu-Cardápio para fotos reais dos lanches e suas descrições [ ]
+- Adicionar a coordenada para que o MENU-NAV funcione [ ]
+- Adicionar link do github do Pablo no footer. [ ] 
+- Adicionar favicon []
 
-## Cores
+## Responsividade
 
-- #A61A1E - vermelho
-- rgb(255, 238, 4); - amarelo
+- Verificar atual responsividade []
+- Adicionar menu HAMBURGUER [] 
 
-## Header
-#EF7F1B - laranja
+## Ideias
 
-### Section Menu
-background: #A61A1E - vermelho
-
-### Section Location 
-background:
-
-### Footer - info - 1
-background: #3C3C3C
-
-### Footer - Dev - 2
-background: #000000
-
-## Informações sobre o Local
-
-Burguers Show
-Telefone: (21) 2638-2440
-Horário de Funcionamento 18:00 ás 22:00
-Endereço: Av Carlos Margiehlla Lt 01 Q. 15 Loja 07 20211-320 - Itaipuaçu, RJ.
-
+- Adicionar animações de CSS []
+- Adicionar mais uma seção de cor branca. []
+- Verificar SEO (Informações que são coletadas pelo Google) [ ]
 

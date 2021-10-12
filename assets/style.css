@@ -1,84 +1,248 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Titan One", cursive;
+}
+
+.flex {
+  display: flex;
 }
 
 /*HEADER*/
 
-header{
-    background-color: #F78620;
-    height: 400px;
+header {
+  background-color: black;
+  height: 16vh;
+  display: flex;
+  justify-content: center;
 }
 
-header nav{
-    display: flex;
-    justify-content: center;
-    height: 90px;
+header .container {
+  width: 70%;
 }
 
-.container{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: black;
+.menu {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.menu nav ul {
+  display: flex;
+  justify-content: space-between;
 }
 
-.logo a img {
-    height: 80px;
+.menu nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 30px;
+  font-family: "Titan One", cursive;
+  font-size: 20px;
+  color: white;
 }
 
-.container .menu{
-    display: flex;
-    align-items: center;
+.menu nav ul li a:hover {
+  color: #f78620;
+  transition: 0.5s;
 }
 
-.menu nav ul{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
+.menu .logo a img {
+  width: 100px;
+  height: 100px;
 }
 
-.menu nav ul li a{
-    text-decoration: none;
-    color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: 'Titan One', cursive;
-    letter-spacing: 4px;
+/*BANNER*/
+
+main {
+  background-color: #f78620;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
 }
 
-/*MENU*/
-
-section .menu{
-    background-color: #A61A1E;
-    height: 400px;
+main .container {
+  width: 70%;
 }
 
-/*LOCALIZAÇÃO*/
-
-section .location{
-    background-color: whitesmoke;
-    height: 400px;
+.banner {
+  display: flex;
+  height: 100%;
 }
 
-/*FOOTER*/
+.banner .banner_title {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-footer .info{
-    background-color: #3C3C3C;
-    height: 400px;
+  color: white;
+  text-shadow: 5px 5px 2px #dc0e0f;
+  font-family: "Titan One", cursive;
 }
 
-footer .dev{
-    background-color: black;
-    height: 200px;
+.banner .banner_title h1 {
+  font-weight: none;
+  font-size: 70px;
+  text-transform: uppercase;
+
+  color: #dc0e0f;
+  text-shadow: 2px 2px 2px white;
+}
+
+.banner .banner_title h2 {
+  font-weight: none;
+  font-size: 50px;
+}
+
+.banner .banner_img {
+  width: 100%;
+}
+
+.banner .banner_img img {
+  width: 105%;
+  object-fit: cover;
+}
+
+/*MENU FOOD*/
+
+section {
+  background-color: #dc0e0f;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+
+section .container {
+  width: 70%;
+}
+
+.food_menu {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food_menu .card {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+
+  font-family: "Titan One", cursive;
+  color: white;
+
+  text-shadow: 2px 2px 2px black;
+}
+
+.food_menu .card .card_logo {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food_menu .card .card_logo img {
+  display: block;
+  margin: 0 auto;
+
+  height: 100%;
+  background: #f78620;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+
+.food_menu .card .card_title {
+  margin: 10px 10px;
+  letter-spacing: 3px;
+}
+
+.food_menu .card .card_description {
+  letter-spacing: 2px;
+}
+
+/*FOOTER LOCATION*/
+
+.footer_location {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c3c3c;
+}
+
+.footer_contact {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.footer_location .container,
+.footer_contact .container {
+  width: 70%;
+}
+
+.footer_infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_infos .map {
+  margin-right: 20px;
+  padding: 30px;
+}
+
+.box_contact .contacts ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.box_contact .contacts h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-shadow: 5px 5px 2px black;
+}
+
+.box_contact .contacts ul li {
+  color: white;
+  text-shadow: 5px 5px 2px black;
+  margin-bottom: 10px;
+}
+
+.box_contact .social_medias {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box_contact .social_medias img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.dev_contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.dev_contacts p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.dev_contacts a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dev_contacts a:hover {
+  color: #f78620;
+  transition: 0.5s;
 }
