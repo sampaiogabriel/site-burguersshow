@@ -89,6 +89,7 @@ header .container {
 .menu .logo a img {
   width: 90px;
   height: 90px;
+  margin: 0;
 }
 
 /*BANNER*/
@@ -245,21 +246,51 @@ section .container {
 
 .box_contact .contacts ul li {
   color: white;
-  text-shadow: 5px 5px 2px black;
+  text-shadow: 5px 3px 3px black;
   margin-bottom: 10px;
+}
+
+.box_contact .contacts ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.box_contact .contacts ul li a:hover {
+  color: #f78620;
+  transition: 0.5s;
 }
 
 .box_contact .social_medias {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: 30px 20px;
 }
 
-.box_contact .social_medias img {
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
-  cursor: pointer;
+.box_contact .social_medias a {
+  color: white;
+  margin: 0 30px;
+  font-size: 50px;
+}
+
+#fb-logo:hover {
+  color: blue;
+  animation: bounce 1s;
+}
+
+#wpp-logo:hover {
+  color: #3ADF57;
+  animation: bounce 1s;
+}
+
+#insta-logo:hover {
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bounce 1s;
 }
 
 .dev_contacts {
