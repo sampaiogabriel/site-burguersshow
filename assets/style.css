@@ -1,7 +1,25 @@
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Titan One", cursive;
+  box-sizing: border-box;
 }
 
 .flex {
@@ -31,25 +49,46 @@ header .container {
 .menu nav ul {
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 .menu nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 30px;
+  padding: 20px;
+  margin: 10px;
+  letter-spacing: 1px;
   font-family: "Titan One", cursive;
   font-size: 20px;
   color: white;
 }
 
+.efeito {
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.efeito:hover {
+  color: #f78620;
+  animation: bounce 1s;
+  text-shadow: 2px 1px 3px #dc0e0f;
+}
+
 .menu nav ul li a:hover {
   color: #f78620;
-  transition: 0.5s;
 }
 
 .menu .logo a img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 /*BANNER*/
